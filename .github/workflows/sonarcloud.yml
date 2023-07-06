@@ -1,0 +1,35 @@
+name: Sonarcloud Coverage
+
+on:
+    workflow_dispatch:
+
+jobs:
+
+  build:
+    name: Test and Analyze
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@master
+
+      - name: Setup go
+        uses: actions/setup-go@v1
+        with:
+          go-version: '1.19'
+
+      - name: Dependencies
+        run: go mod tidy
+  
+      - name: Test
+        run: go test -timeout 10m -coverprofile=./cov.out ./...
+
+      - name: Run Gosec Security Scanner
+        run: |
+          go get github.com/securego/gosec/cmd/gosec
+          gosec -no-fail -fmt=sonarqube -out report.json ./...
+
+      - name: Analyze with SonarCloud
+        uses: sonarsource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
