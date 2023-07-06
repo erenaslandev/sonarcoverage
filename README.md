@@ -1,0 +1,11 @@
+# sonarcoverage
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=erenaslandev_sonarcoverage&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=erenaslandev_sonarcoverage)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=erenaslandev_sonarcoverage&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=erenaslandev_sonarcoverage)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=erenaslandev_sonarcoverage&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=erenaslandev_sonarcoverage)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=erenaslandev_sonarcoverage&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=erenaslandev_sonarcoverage)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=erenaslandev_sonarcoverage&metric=bugs)](https://sonarcloud.io/summary/new_code?id=erenaslandev_sonarcoverage)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=erenaslandev_sonarcoverage&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=erenaslandev_sonarcoverage)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=erenaslandev_sonarcoverage&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=erenaslandev_sonarcoverage)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=erenaslandev_sonarcoverage&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=erenaslandev_sonarcoverage)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=erenaslandev_sonarcoverage&metric=coverage)](https://sonarcloud.io/summary/new_code?id=erenaslandev_sonarcoverage)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=erenaslandev_sonarcoverage&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=erenaslandev_sonarcoverage)
