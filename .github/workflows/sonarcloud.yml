@@ -21,7 +21,7 @@ jobs:
         run: go mod tidy
   
       - name: Test
-        run: go test -timeout 10m -covermode atomic -coverprofile=./cov.out ./...
+        run: go test -timeout 10m -coverprofile=./cov.out ./...
 
       - name: Run Gosec Security Scanner
         uses: securego/gosec@master
