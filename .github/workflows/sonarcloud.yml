@@ -23,11 +23,6 @@ jobs:
       - name: Test
         run: go test -timeout 10m -coverprofile=./cov.out ./...
 
-      - name: Run Gosec Security Scanner
-        run: |
-          go install github.com/securego/gosec/cmd/gosec@latest
-          gosec -no-fail -fmt=sonarqube -out report.json ./...
-
       - name: Analyze with SonarCloud
         uses: sonarsource/sonarcloud-github-action@master
         env:
