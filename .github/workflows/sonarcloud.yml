@@ -9,18 +9,18 @@ jobs:
     name: Test and Analyze
     runs-on: ubuntu-latest
     steps:
-      - name: Clone Repository
-        uses: actions/checkout@master
-
-      - name: Setup go
-        uses: actions/setup-go@v1
+      - name: Setup Go
+        uses: actions/setup-go@v2
         with:
           go-version: '1.19'
 
-      - name: Dependencies
-        run: go mod tidy
+      - name: Clone Repository
+        uses: actions/checkout@v2
+
+      - name: Get Dependencies
+        run: go get -v -t -d ./..
   
-      - name: Test
+      - name: Run Unit Tests
         run: go test -timeout 10m -coverprofile=./cov.out ./...
 
       - name: Run Gosec Security Scanner
