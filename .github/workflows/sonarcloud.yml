@@ -17,8 +17,8 @@ jobs:
       - name: Clone Repository
         uses: actions/checkout@v2
 
-      - name: Get Dependencies
-        run: go get -v -t -d ./..
+      - name: Install Dependencies
+        run: go mod download
   
       - name: Run Unit Tests
         run: go test -timeout 10m -coverprofile=./cov.out ./...
